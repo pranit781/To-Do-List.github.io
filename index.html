@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="fetchNotes()">
+  <h1>Note-Taking App</h1>
+  
+  <form id="note-form" onsubmit="return onSubmitOfNote()">
+    <input type="text" id="note-input" placeholder="Enter a note..." required>
+    <br><br>
+    <button type="submit">Add Note</button>
+  </form>
+
+  <ul id="note-list"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>
